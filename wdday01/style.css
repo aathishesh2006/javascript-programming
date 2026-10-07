@@ -1,0 +1,185 @@
+/* style.css */
+header {
+
+    background-color: #376c81;
+    color: rgb(178, 190, 107);
+    padding: 20px;
+    text-align: center;
+}
+
+body
+{
+    margin: 0;
+    font-family: "Times New Roman", serif;
+}
+
+h1{
+    color: #f3f3f3
+}
+#report
+{
+    font-weight: bold;
+}
+h2{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 22px; 
+}
+#report-form
+{
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #e6eee7;
+    margin: 30px auto;
+}
+
+#resultsTable
+{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tagline
+{
+    font-style: italic;
+    color: #f3ededbb;
+}
+
+#studentfrom input
+{
+    border: 1px solid #1689cc;
+}
+
+#studentfrom label
+{
+    display: block;
+    margin-top: 10px;
+}
+
+#studentfrom input
+{
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#resultsTable th,
+#resultsTable td
+{
+    padding: 10px;
+}
+
+#studentfrom label
+{
+    display: block;
+    margin-top: 10px;
+}
+
+#studentfrom input
+{
+    border: 1px solid #4e0404;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#resultsTable th,
+#resltsTable td
+{
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+}
+
+#resultsTable
+{
+    display: table;
+}
+
+.hidden 
+{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #376c81;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+}
+main{
+    padding-bottom: 60px;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+main{
+    display: grd;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+header
+{
+    background-color: #376c81;
+    color: rgb(250, 238, 238);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 600px)
+{
+    #report-form
+    {
+        width: 90%;
+    }
+    #resultsTable
+    {
+        font-size: 13px;
+    }
+}
+
+#checkBtn
+{
+    background: #889db1;
+    color: #f9fcfa;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.10s ease;
+}
+
+#checkBtn:hover
+{
+    background: #1a5f7a;
+}
+
+@keyframes fadeIn
+{
+    from { opacity: 0; }
+    to{ opacity: 1; }
+}
+
+#report-form
+{
+    animation: fadeIn 0.6s ease-in;
+}

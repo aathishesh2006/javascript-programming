@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+  <title>StudyBuddy — Student Grade Tracker</title>
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+  <header>
+    <img src="studybuddy-logo.png" alt="StudyBuddy logo" width="100">
+    <h1>StudyBuddy</h1>
+    <p class="tagline">Track your marks. Know your grade. Instantly.</p>
+  </header>
+ 
+  <nav>
+    <a href="https://en.wikipedia.org/wiki/Grading_in_education" target="_blank">What do grades mean?</a>
+  </nav>
+ 
+  <main>
+    <section id="report-form">
+      <h2>Student Report Card</h2>
+
+      <p id="intro">Enter a student's name and marks below to see their result.</p>
+      
+      <ol>
+        <li>Enter the student's name</li>
+        <li>Enter their marks</li>
+        <li>Click "Check Result" to see PASS/FAIL and grade</li>
+      </ol>
+      
+      <form id="studentForm">
+      
+        <label for="nameInput">Student Name:</label>
+        <input type="text" id="nameInput" name="studentName" required>
+ 
+        <label for="marksInput">Marks:</label>
+        <input type="number" id="marksInput" name="marks" min="0" max="100" required>
+        <button type="submit" id="checkBtn">Check Result</button>
+
+      </form>
+
+      <p id="report"></p>
+    
+    </section>
+
+ <section id="report-table">
+      
+  <h2>Class Results</h2>
+      <table id="resultsTable">
+        <thead>
+          <tr><th>Name</th><th>Marks</th><th>Result</th><th>Grade</th></tr>
+        </thead>
+        <tbody id="resultsBody">
+        </tbody>
+      </table>
+  </section>
+ 
+    <section id="tutorial">
+      <h2>How to Use StudyBuddy</h2>
+      <video controls width="300">
+        <source src="studybuddy-tutorial.mp4" type="video/mp4">
+        Your browser is currently does not support the video tag.
+      </video>
+    </section>
+  
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026 StudyBuddy. Built while learning HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>
+ 
