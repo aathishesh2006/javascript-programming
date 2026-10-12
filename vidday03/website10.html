@@ -1,0 +1,53 @@
+<!--
+4j. Continuing from 4i, add onclick=".." attributes to the two buttons:
+• When clicking 'Add to cart', create a popup with the text 'Added'.
+• When clicking 'Buy now', display the message 'Loading..." in the
+Console, and then create a popup with the text 'Purchased'.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PurbleKart
+        </title>
+        <style>
+            .btn1{
+                color: rgb(238, 232, 232);
+                background-color: purple;
+                border-color: plum;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            .btn2{
+                color: black;
+                background-color: plum;
+                border-color: purple;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            DDR5 RAM for PC
+        </p>
+        <p>
+            Price : $ 487.99
+        </p>
+        <button class = "btn1"
+            onclick = "alert(' Added Successfully');">
+            Add to cart
+        </button>
+
+        <button class = "btn2"
+        onclick = "console.log('Loading...');
+        alert(' Purchased Successfully');">
+        Buy now
+        </button>
+    </body>
+</html>
