@@ -1,0 +1,74 @@
+<!--
+5j. Add 2 buttons '-2' and '-3', which decrease the quantity by 2 and 3.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PURBYKARY
+        </title>
+        <style>
+            .reset{
+            background-color: red;
+            color: white;
+            }
+
+            .Add{
+                background-color: yellowgreen;
+                color: navy;
+            }
+
+            .Plus{
+                background-color: yellow;
+                color: black;
+            }
+
+            .PlusPlus{
+                background-color: orange;
+                color: black;
+            }
+
+            .Minus{
+                background-color: coral;
+                color: black;
+            }
+
+            .MinusMinus{
+                background-color: lightpink;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <button class = "Add" onclick ="cartQuantity = cartQuantity + 1; console.log(`cartQuantity = ${cartQuantity}`)">
+            Add To Cart
+        </button>
+
+        <button class = "Plus" onclick = "cartQuantity = cartQuantity + 4; console.log(`cartQuantity = ${cartQuantity}`)">
+            +4
+        </button>
+
+        <button class = "PlusPlus" onclick = "cartQuantity = cartQuantity + 5; console.log(`cartQuantity = ${cartQuantity}`)">
+            +5
+        </button>
+
+        <button class = "reset" onclick = "cartQuantity = 0; console.log(`The Cart is reset`); console.log(`cartQuantity = ${cartQuantity}`);">
+            reset
+        </button>
+
+        <button class = "Minus" onclick = "cartQuantity = cartQuantity - 2; console.log(`cartQuantity = ${cartQuantity}`)">
+            -2
+        </button>
+
+        <button class = "MinusMinus" onclick = "cartQuantity = cartQuantity - 3; console.log(`cartQuantity = ${cartQuantity}`)">
+            -3
+        </button>
+
+        <script>
+            let cartQuantity = 0;
+        </script>
+
+    </body>
+</html>

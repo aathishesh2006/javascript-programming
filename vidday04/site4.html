@@ -1,0 +1,32 @@
+<!--
+5d. Continuing from 5c, display 'Cost of food: $${cost) in the console.
+-->
+
+<!--
+5c. At a restaurant, you order 1 coffee ($5), 2 bagels ($3 each), and 1 soup
+($9). Calculate the cost and save it in a variable called 'cost'.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Findig cost
+        </title>
+        <p>
+            The order is :
+        </p>
+    </head>
+    <body>
+        <button onclick = "alert(`cost is $${cost}`), console.log(`foodcost : $${cost}`);">
+            Bill
+        </button>
+        <script>
+            let coffee = (1 * 5);
+            let beagels = (2 * 3);
+            let soup = (1 * 9);
+
+            const cost = coffee + beagels + soup; 
+        </script>
+    </body>
+</html>

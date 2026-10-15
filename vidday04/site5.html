@@ -1,0 +1,30 @@
+<!--
+5e. Let's say the restaurant charges a 10% tax. Using the 'cost' variable
+from 5c, calculate the tax (hint: multiply by 0.1), and save the result
+in a variable.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Finding cost
+        </title>
+    </head>
+    <body>
+        <p>
+            The order is :
+        </p>
+        <button onclick="alert(`cost after adding tax 10% is $${finalcost}`)">
+            Bill
+        </button>
+        <script>
+            let coffee = (1 * 5);
+            let beagels = (2 * 3);
+            let soup = (1 * 9);
+
+            const cost = coffee + beagels + soup;
+            let tax_cost = Math.round(cost * 0.10 * 100) / 100;
+            let finalcost = tax_cost + cost;
+        </script>
+    </body>
+</html>
