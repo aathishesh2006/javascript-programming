@@ -1,0 +1,57 @@
+<!--
+6d. Imagine an amusement park that has a discount for children (6 years
+and younger) or seniors (65 years and older).
+• Create a variable 'age' and save a person's age inside.
+• Create an if-statement that checks if the person qualifies for a
+discount. If they do, display 'Discount' in the console. Otherwise,
+display 'No discount' in the console.
+*adding the price and discounted price
+Note: try to use the || operator in your solution.
+• Try changing the 'age' variable to display different messages.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    Amusement Park Entry
+    </title>
+    <p>
+        Amusement park entry process for checking discount according to their age
+    </p>
+    </head>
+    <body>
+        <script>
+            const age = 8;
+            const name = 'Rajesh';
+            let discount = '';
+            let ticket = 2000;
+            let discountant = 0;
+            let  final = 0;
+
+            if(age <= 6 || age >= 65)
+        {
+            discount = 'kudos!! you are an elligible for 12% discount ';
+            discountant = 12;
+        }
+
+        else
+        {
+            discount = 'you are not elligible for 12% discount ';
+            discountant = 0;
+        }
+
+        if(discountant !== 0)
+        {
+            final = ticket - (ticket * discountant / 100);
+            console.log(`hi ${name} ${discount} your final price is ${final}`);
+        }
+
+        else
+        {
+            console.log(`hi ${name} ${discount} your final price is ${ticket}`);
+        }
+
+        </script>
+    </body>
+</html>
