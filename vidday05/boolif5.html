@@ -8,3 +8,60 @@ brackets () to control which code gets done first.
 • Try changing the value of isHoliday to display different messages.
 -->
 
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    Amusement Park Entry
+    </title>
+    <p>
+        Amusement park entry process for checking discount according to their age
+    </p>
+    </head>
+    <body>
+        <script>
+            const age = 8;
+            const name = 'Rajesh';
+            let discount = '';
+            let ticket = 2000;
+            let discountant = 0;
+            let  final = 0;
+            let isholiday = false;
+
+            if(isholiday)
+        {
+            console.log("Its a holiday and No discount's are available")
+        }
+
+        else
+        {
+            console.log("Its not a holiday and discounts are not available")
+        }
+
+            if(age <= 6 || age >= 65)
+        {
+            discount = 'kudos!! you are an elligible for 12% discount ';
+            discountant = 12;
+        }
+
+        else
+        {
+            discount = 'you are not elligible for 12% discount ';
+            discountant = 0;
+        }
+
+        if(discountant !== 0)
+        {
+            final = ticket - (ticket * discountant / 100);
+            console.log(`hi ${name} ${discount} your final price is ${final}`);
+        }
+
+        else
+        {
+            console.log(`hi ${name} ${discount} your final price is ${ticket}`);
+        }
+
+        </script>
+    </body>
+</html>
