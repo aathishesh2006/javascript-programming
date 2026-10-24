@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PURBYKARY
+        </title>
+    </head>
+    <body>
+        <button onclick ="
+            console.log('The Maximum Cart Quantity is 10')
+            if(cartquantity <= 9)
+            {
+                cartquantity = cartquantity + 1;
+            }
+            else
+            {
+                console.log('You have reached the maximum quantity');
+            }
+            console.log(`cartquantity = ${cartquantity}`)
+        "
+        class = "Add">
+            Add to Cart
+        </button>
+
+        <button onclick ="
+        console.log('The Maximum Cart Quantity is 10')
+        if(cartquantity <= 6)
+        {
+            cartquantity = cartquantity + 4;
+        }
+        else
+        {
+            console.log('You have reached the maximum quantity');
+        }
+        console.log(`cartquantity = ${cartquantity}`)
+        "
+        class = "Add1">
+            +4
+        </button>
+
+        <button onclick = "
+        console.log('The Maximum Cart Quantity is 10')
+        if(cartquantity <= 9)
+        {
+            cartquantity = cartquantity + 5;
+        }
+        else
+        {
+            console.log('You have reached the maximum quantity');
+        }
+        console.log(`cartquantity = ${cartquantity}`)
+        "
+        class = "Add2">
+            +5
+        </button>
+
+        <button onclick = "
+        cartquantity = 0;
+        console.log('The cart is reset');
+        console.log(`The cartquantity is $ {cartquantity}`);
+        "
+        class = "reset">
+            Reset
+        </button>
+
+        <button onclick = "
+        if(cartquantity - 2 < 0)
+        {
+            alert('Not enough items in the cart');
+        }
+        else
+        {
+            cartquantity = cartquantity - 2;
+            console.log(`cartquantity is ${cartquantity}`);
+        }"
+        class = "Minus">
+            -2
+        </button>
+
+        <button onclick = "
+        if(cartquantity - 3 < 0)
+        {
+        alert('Not enough items in the cart');
+        }
+        else{
+            cartquantity = cartquantity - 3;
+            console.log(`cartquantity is $ {cartquantity}`);
+        }
+    "
+    class = "Minus1">
+            -3
+        </button>
+
+        <style>
+            .reset{
+                background-color: lightskyblue;
+                color: black;
+            }
+            .Minus{
+                background-color: skyblue;
+                color: black;
+            }
+            .Minus1{
+                background-color:navy;
+                color: white;
+            }
+            .Add{
+                background-color: purple;
+                color: aliceblue;
+            }
+            .Add1{
+                background-color: violet;
+                color: black;
+            }
+            .Add2{
+                background-color: plum;
+            }
+        </style>
+
+        <script>
+            let cartquantity = 0;
+        </script>
+
+    </body>
+
+</html>
