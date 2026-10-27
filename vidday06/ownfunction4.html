@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Plane Tickets Booking 
+        </title>
+    </head>
+    <body>
+        <p>
+            Given First Class = Rs 50,000
+            Given Business Class = Rs 35,000
+        </p>
+
+        <button onclick = "convertToBusiness(book_f)">
+            Book First Class to Business Class
+        </button>
+
+        <button onclick = "convertToFirst(book_b)">
+            Book Business Class to First Class
+        </button>
+
+        <script>
+            let book_f = 50000;
+            let book_b = 35000;
+
+            function convertToBusiness(firstclass)
+            {
+                let cost = (firstclass * 9 / 5) + 32;
+                console.log(`BusinessClass: ${cost}`);
+            }
+
+            function convertToFirst(businessClass)
+            {
+                let cost = (businessClass - 32) * 5 / 9;
+                console.log(`FirstClass: ${cost}`);
+            }
+
+        </script>
+    </body>
+</html>

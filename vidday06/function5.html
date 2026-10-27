@@ -1,0 +1,70 @@
+<!--
+7f. Create a function 'convertTemperature(degrees, unit)' that takes a
+number and a unit ('C' or 'F'), and converts it into the other unit.
+• convertTemperature(25, 'C') => '77F'
+• convertTemperature(86, 'F') => '30C'
+Note: return a string, and try to reuse the functions from 7d and 7e.
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+            (C 2 F)
+        </title>
+
+    </head>
+
+    <body>
+
+        <p>
+            Given Celsius = 25-C <br>
+            Given Farenheit = 77-F
+        </p>
+
+        <button onclick = "console.log(convertTemperature(25, 'C'))">
+            Conv C TO F
+        </button>
+
+        <button onclick = "console.log(convertTemperature(86, 'F'))">
+            Conv F TO C
+        </button>
+
+        <script>
+            
+            function convertToFahrenheit(celsius)
+            {
+                return (celsius * 9 / 5) + 32;
+            }
+
+            function convertTocelsius(farenheit)
+            {
+                return (farenheit - 32) * 5 / 9;
+            }
+
+            function convertTemperature(degrees, unit)
+        {
+
+            if(unit === 'C')
+            {
+                let result = converToFarenheit(degrees);
+                return `${result}F`;
+            }
+            else if(unit === 'F')
+            {
+                let result = convertToCelsius(degrees);
+                return `${result}C`;
+            }
+            else{
+                return 'Invalid Unit';
+            }
+        }
+
+        </script>
+
+    </body>
+
+</html>

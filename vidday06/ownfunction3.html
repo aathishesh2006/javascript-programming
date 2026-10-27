@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Own function
+        </title>
+        <p>
+            Please click the button to clarrify the functions.
+        </p>
+    </head>
+    <body>
+        <button onclick = "greet(name2)">
+            Own function..
+        </button>
+        <button onclick= "greet()">
+            own function(name_undefined)
+        </button>
+        <script>
+            let name1 = "Yogeshwari";
+            let name2 = "I am Yogi";
+            function greet(name){
+                if(!name){
+                    console.log(`Hello every one , I am loving Aathi forever`);
+                }
+                else{
+                    console.log(`hello Every one, ${name}`);
+                }
+            }
+        </script>
+    </body>
+</html>
