@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+            Function
+        </title>
+
+    </head>
+
+    <body>
+        <p>
+            Click the button to change the convertion of the litre...
+        </p>
+
+        <button onclick = "console.log(convertLitre(20, 'l', 'ml'))">
+            Convert 20 to ml.
+        </button>
+
+        <button onclick = "console.log(convertLitre(5000, 'ml', 'l'))">
+            Convert 5000 ml to litre.
+        </button>
+
+        <button onclick = "console.log(convertLitre(5000, 'l', 'l'))">
+            convert 5 litre to ml.
+        </button>
+
+        <script>
+
+            function convertLitre(litre, from, to) 
+            {
+                if(from == 'l' && to == 'ml')
+            {
+                let litre1 = litre * 1000;
+                console.log(`${litre1} ${to}`)
+            }
+                
+            else if(from == 'ml' && to == 'l')
+            {
+                let litre2 = litre / 1000;
+                console.log(`${litre2} ${to}`)
+            }
+
+            else
+            {
+                console.log(`${litre} ${to}`)
+            }
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
