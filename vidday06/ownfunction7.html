@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+            Function
+        </title>
+
+    </head>
+
+    <body>
+
+        <button onclick = "convertLitre(2, 'litre', 'ml')">
+            Convert 2 litre to ml
+        </button>
+
+        <button onclick = "convertLitre(2500, 'ml', 'litre')" >
+            Convert 2500 ml to litre
+        </button>
+
+        <button onclick = "convertLitre(2.5, 'litre', 'drops')">
+            Convert 2.5 litre to drops
+        </button>
+
+        <button onclick = "convertLitre(500, 'ml', 'litre')">
+            Convert 500 ml to 1 litre
+        </button>
+
+        <button onclick = "convertLitre(500, 'ml', 'drops')">
+            Convert 500 ml to drops
+        </button>
+
+        <button onclick = "convertLitre(500, 'litre', 'drops')">
+            Convert 5 litre to drops
+        </button>
+
+        <button onclick = "convertLitre(500, 'lbs', 'drops')">
+            Convert to Kg
+        </button>
+
+    <script>
+
+        function convertLitre(litre, from, to)
+        {
+            if(from == 'litre' && to == 'ml')
+            {
+                let litre1 = litre * 1000;
+                console.log(`${litre1} ${to}`)
+            }
+
+            else if(from == 'ml' && to == 'litre')
+            {
+                let litre2 = litre / 1000;
+                console.log(`${litre2} ${to}`)
+            }
+
+            else if(from == 'ml' && to == 'drops')
+            {
+                let litre3 = litre * 20;
+                console.log(`${litre3} ${to}`)
+            }
+
+            else if(from == 'drops' && to == 'ml')
+            {
+                let litre4 = litre / 20;
+                console.log(`${litre4} ${to}`)
+            }
+
+            else if(from == 'litre' && to == 'drops')
+            {
+                let litre5 = litre * 20000;
+                console.log(`${litre5} ${to}`)
+            }
+
+            else if(from == 'drops' && to == 'litre')
+            {
+                let litre6 = litre / 0.00250;
+                console.log(`${litre6} ${to}`)
+            }
+
+            else if(from == 'kg' || to == 'kg')
+            {
+                consol.log(`Invalid Value , only use the litre, ml, drops`);
+            }
+        }
+    </script>
+
+    </body>
+
+</html>
